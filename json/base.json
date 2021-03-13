@@ -1,0 +1,113 @@
+
+
+var CULTURE = [
+	{
+		"title": "企業文化",
+		"href": "about/culture.html"
+	},
+	{
+		"title": "發展歷程",
+		"href": "about/history.html"
+	},
+	{
+		"title": "活動圖片",
+		"href": "news/activity.html"
+	}
+]
+var INDUSTRY = [
+	{
+		"title": "零售",
+		"href": "industry/default.html?b=habiliment"
+	},
+	{
+		"title": "文化",
+		"href": "industry/default.html?b=comics"
+	},
+	{
+		"title": "製造",
+		"href": "industry/default.html?b=culture"
+	},
+	{
+		"title": "金融",
+		"href": "industry/default.html?b=financial"
+	},
+	// {
+	// 	"title": "其它收入",
+	// 	"href": "industry/default.html?b=other"
+	// }
+]
+var ABOUT = [
+	{
+		"title": "集團新聞",
+		"href": "news/index.html"
+	},
+	{
+		"title": "視頻中心",
+		"href": "about/video.html"
+	},
+	{
+		"title": "管理團隊",
+		"href": "about/team.html"
+	}
+]
+
+var about_description = {
+	"banner": "../public/images/about/about.jpg",
+	"description": [
+		"津萬文創商業集團於2017年在澳門正式成立。整合了在澳門、香港、內地、台灣及日本的跨區域及國家的聯營集團公司，成功地踏出了以亞洲為主的戰略部署作為集團全球化的重要一步。",
+		"津萬文創商業集團以” 讓文化創意更好地融入生活”的愿景，堅守” 打造全球最有效的文創平台，為文創從業者創造最大价值，推動社會不斷進步”的使命感。往後繼續謀求進一步把版圖擴展至以東南亞、北美及歐洲為主的市場為核心業務發展，目標成為國際一流跨國公司。"
+	]
+}
+
+var h_menu = [
+	{
+		"title": "首頁",
+		"href": "index.html"
+	},
+	{
+		"title": "公司簡介",
+		"href": "about/culture.html",
+		"submenu": CULTURE
+	},
+	{
+		"title": "津萬產業",
+		"href": "industry/index.html",
+		"submenu": INDUSTRY
+	},
+	{
+		"title": "關於我們",
+		"href": "news/index.html",
+		"submenu": ABOUT
+	},
+	{
+		"title": "加入我們",
+		"href": "about/join.html"
+	},
+	{
+		"title": "聯繫我們",
+		"href": "about/contact.html"
+	}
+]
+
+var f_menu = {
+	"津萬簡介": CULTURE,
+	"津萬產業": [INDUSTRY[0], INDUSTRY[1], INDUSTRY[2]],
+	"關於我們": [ABOUT[0], INDUSTRY[3], ABOUT[2]],
+	"聯繫我們": [
+		{
+			"title": "加入我們",
+			"href": "about/join.html" 
+		},
+		{
+			"title": "聯繫方式",
+			"href": "about/contact.html" 
+		},
+		ABOUT[1]
+	]
+	// "微信公眾號": {
+	// 	"qrcode": ""
+	// },
+	// "新浪微博": {
+	// 	"qrcode": ""
+	// },
+}

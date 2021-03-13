@@ -1,0 +1,24 @@
+
+var contact = [
+	{
+		"company": "津萬文創商業集團",
+		"location": "香港",
+		"address": "香港觀塘巧明街116-118號萬年工業大廈13樓B座B1室",
+		// "tel": "电话：(852) 2177 3535",
+		"email": "Info@CMCBgroup.com"
+	},
+	{
+		"company": "",
+		"location": "澳門",
+		"address": "澳門南灣大馬路429號,南灣商業中心,5樓E室",
+		// "tel": "电话：(853) 2838 9308",
+		"email": "Info@CMCBgroup.com"
+	},
+	{
+		"company": "",
+		"location": "中山",
+		"address": "廣東省中山市博爱五路21号大东裕商业大厦一期706",
+		// "tel": "电话：(86) 0760-8880 3783",
+		"email": "Info@CMCBgroup.com"
+	}
+]

@@ -1,0 +1,173 @@
+
+ @media screen and (max-width: 1200px){
+	.base-wrap{
+		width: 1100px;
+	}
+	.nav a, .nav span{
+		font-size: 20px;
+	}
+	.title{
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+	.title span{
+		font-size: 30px;
+	}
+	.about-des,
+	.industry-default p,
+	.b-default .description,
+	.news-default .default p{
+		font-size: 26px;
+	}
+	.news-default .default p.img-desciption{
+		font-size: 15px;
+	}
+	.industry-default h3{
+		font-size: 28px;
+	}
+
+	.industry-default img,
+	.news-default .default img{
+		width: 100%;
+		margin-top: 45px;
+	}
+	/* 津万产业 */
+	.b-default{
+		height: auto;
+		margin-bottom: 80px;
+	}
+	.b-default img{
+		float: none;
+		width: 100%;
+		height: auto;
+	}
+	.b-default .description .btn{
+		color: white;
+		background-color: #eda93a;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		margin-top: 30px;
+		letter-spacing: 0.3em;
+	}
+	/* 关于我们 */
+	.news-list{
+		font-size: 22px;
+	}
+	.news-list.row-2 .news{
+		width: 100%;
+		margin-top: 25px;
+	}
+	.news-list.row-2 .news .date{
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.news-list .news .cover{
+		height: auto;
+	}
+	.news-list.row-2 .news{
+	    border-color: #eda93a;
+	}
+	.news-list.row-2 .news .btn{
+		color: white;
+		background-color: #eda93a;
+		margin-top: 20px;
+		padding: 15px 30px;
+	}
+	.news-nav{
+		font-size: 22px;
+	}
+	/* 视频中心 */
+	.video-list .video .cover{height: 620px;}
+	.video-list .video p{
+		font-size: 24px;
+	}
+	/* 管理团队 */
+	.team-list .default .right{
+	    padding-top: 60px;
+    	padding-left: 120px;
+    	padding-right: 40px;
+	}
+	.team-list .default .right .content{
+		font-size: 24px;
+	}
+	.team-list .default .right .content p{
+		font-size: 0.8em;
+	}
+	.team-list .default .right .content h4, 
+	.team-list .default .right .content h6{
+		font-size: 1.1em;
+	}
+	.team-list .default .right .content h3,
+	.team-list .default .right .content h5{
+		margin-bottom: 10px;
+	}
+	.team-list .default{
+	    height: 700px;
+		position: relative;
+		margin-bottom: 50px;
+	}
+	.team-list .default .left img{
+		right: -80px;
+	}
+	/* 活动图片 */
+	.activity-date{
+		font-size: 22px;
+	}
+	.activity-list .activity p{
+		font-size: 24px;
+	}
+	.i-activity a,
+	.activity-list .activity{
+		width: 49%;
+	}
+	.activity-list .activity{
+		margin-top: 30px;
+	}
+	.activity-description p{
+		font-size: 24px;
+	}
+	.activity-default img{width: 100%;}
+	/* 关于我们 */
+	.history-list{font-size: 26px;}
+	.history-list .history .content{
+		border-color: #ecaa39;
+	}
+	.history-list .history .content .arrow-1{
+		border-color: transparent #ecaa39;
+	}
+
+	.history-list .history .content .circle{
+		background-color: #edaa35;
+	}
+	/* 加入我们 */
+	.join-about{
+		font-size: 24px;
+		background-size: 100% 740px;
+		padding: 800px 60px 50px;
+		height: 1180px;
+	}
+	.jobs{
+		font-size: 23px;
+	    padding: 40px 50px;
+	}
+	dl.jobs dt{left: 50px;}
+	.jobs.info li{
+		font-size: .8em;
+		width: 35%;
+	}
+	.jobs.info li:nth-child(3n){width:28%}
+	.other_jobs a, .other_jobs span{
+		font-size: 22px;
+	    width: 32.33%;
+	    height: 80px;
+	    line-height: 80px;
+	    margin-bottom: 30px;
+	}
+	/* 联系我们 */
+	.contact-list{
+		font-size: 28px;
+		background-size: 100% 500px;
+		padding-left: 0;
+		padding-top: 530px;
+	}
+ }

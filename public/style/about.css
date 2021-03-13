@@ -1,0 +1,200 @@
+.culture h2,
+.culture-des-list h3{
+	position: relative;
+	line-height: 50px;
+}
+.culture h2{margin-bottom: 15px;text-align: center;}
+.culture h2 span,
+.culture-des-list h3 span{
+	font-size: 24px;
+	font-weight: bold;
+	position: relative;
+	z-index: 1;
+	background-color: white;
+	padding-right:15px;
+}
+.culture h2 span{padding-left:15px;}
+.culture h2:before,
+.culture-des-list h3:before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background-color: #ddd;
+}
+.culture-des-list dd{
+	height: 370px;
+	margin-bottom: 30px;
+}
+.culture-des{overflow: hidden;padding-top: 5%;}
+.culture-des p{line-height: 2em;font-size: 14px;}
+.culture-des-list .left img{float: left;}
+.culture-des-list .left .culture-des{padding-left:50px;}
+.culture-des-list .right img{float: right;}
+.culture-des-list .right .culture-des{padding-right:50px;}
+
+.culture-des-list dd.zdtx-list{height: auto;}
+.culture-des-list dd.zdtx-list img{width: 100%;}
+.culture-des-list dd.zdtx-list div.culture-des{padding-top: 10px;}
+.culture-des-list dd.zdtx-list div.culture-des h3{text-align: center;}
+
+.glwh-list li{padding: 0 50px;}
+/* .glwh-list li.left{float:left;} */
+/* .glwh-list li.right{float:left;} */
+.glwh-list{line-height: 2em;}
+.glwh-list h4{
+	font-size:  16px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+.glwh-list p{
+	font-size: 14px;
+	color: #555;
+	margin-top: 5px;
+}
+ul.zdhxyz-list{
+	float: right;
+	line-height: 60px;
+	letter-spacing: 1px;
+	margin-top: 20px;
+	margin-right: 50px;
+}
+ul.zdhxyz-list li{font-weight: bold;}
+
+
+
+.history-list{
+	font-size: 14px;
+	position: relative;
+	width: 1100px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 100px;
+}
+.history-list .middle-line{
+	width: 2px;
+	height: 100%;
+	background-color: #aaa;
+	position: absolute;
+	top:0;left: 50%;
+	margin-left: -1px;
+}
+.history-list .history{
+	margin-top: -100px;
+}
+.history-list .history .content{
+	width: 46%;
+	border: 1px solid #eee;
+	border-radius: 3px;
+	padding: 18px 35px;
+	box-sizing: border-box;
+	margin-top: 20px;
+	position: relative;
+	z-index: 1;
+}
+.history-list .history h6{
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.history-list .history p{
+	font-size: 1em;
+	color: #777;
+	line-height: 1.7em;
+}
+.history-list .history img{
+	max-width: 100%;
+	margin-top: 10px;
+}
+.history-list .history:nth-child(2n-1) .content{
+	float: right;
+}
+.history-list .history .content .arrow-1,
+.history-list .history .content .arrow-2{
+	width: 0;height: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	border-style: solid;
+}
+.history-list .history:nth-child(2n-1) .content .arrow-1,
+.history-list .history:nth-child(2n-1) .content .arrow-2{
+	left: -16px;
+	border-width: 16px 16px 16px 0;
+	border-color: transparent #eee;
+}
+.history-list .history:nth-child(2n-1) .content .arrow-2{
+	left: -15px;
+	border-color: transparent white;
+}
+.history-list .history:nth-child(2n) .content .arrow-1,
+.history-list .history:nth-child(2n) .content .arrow-2{
+	right: -16px;
+	border-width: 16px 0 16px 16px;
+	border-color: transparent #eee;
+}
+.history-list .history:nth-child(2n) .content .arrow-2{
+	right: -15px;
+	border-color: transparent white;
+}
+.history-list .history .content:hover{
+	border-color: #ecaa39;
+}
+.history-list .history .content:hover .arrow-1{
+	border-color: transparent #ecaa39;
+}
+
+.history-list .history .content .circle{
+	width: 18px;height: 18px;
+	border-radius: 9px;
+	background-color: #edaa35;
+	position: absolute;
+	top: 50%;
+	margin-top: -9px;
+}
+.history-list .history .content .circle:before{
+	content: "";
+	display:block;
+	margin: 1px 0 0 1px;
+	width: 12px;height: 12px;
+	border: 2px solid white;
+	border-radius: 7px;
+}
+.history-list .history:nth-child(2n-1) .content .circle{
+	left:-54px;
+}
+.history-list .history:nth-child(2n) .content .circle{
+	right:-54px;
+}
+
+/* 联系我们 */
+.contact-list{
+	font-size: 14px;
+	color: #666;
+	min-height: 300px;
+	line-height: 1.7em;
+	padding-left: 580px;
+	margin-top: 40px;
+	margin-bottom: 80px;
+	background: url("../images/contact/map.jpg") top left no-repeat;
+	box-sizing: border-box;
+}
+.contact-list h2{
+	color: black;
+	font-size: 1.4em;
+}
+.contact-list h3{
+	color: #333;
+	font-size: 1.2em;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+.contact-list ul{
+	padding-top: 8px;
+	padding-bottom: 15px;
+	border-bottom: 1px dashed #ddd;
+}

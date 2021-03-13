@@ -1,0 +1,73 @@
+
+.b-default{
+	color: white;
+	height: 390px;
+	background-color: #6d6d6d;
+	background:#6d6d6d url('../images/bg.png') right -50px repeat-x;
+	background-size: 650px 650px;
+}
+.b-default img{
+	height: 390px;
+	float: left;
+}
+.b-default .description{
+	font-size: 13px;
+	line-height: 1.70em;
+	padding: 30px;
+	overflow: hidden;
+}
+.b-default .description h2{
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+.b-default .description p{
+	font-size: 1em;
+}
+.b-default .description p hr{
+	padding:3px 0;
+	margin:0;
+	border: 0;
+}
+.b-default .description .btn{
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #eda93a;
+	display: inline-block;
+	padding: 8px 30px;
+	border: 1px solid #eda93a;
+	border-radius: 3px;
+	margin-top: 20px;
+}
+.b-default .description .btn:hover{
+	background-color: #eda93a;
+	color: white;
+}
+
+/* 详情页 */
+.industry-default{
+	width: 920px;
+}
+.industry-default p{
+	font-size: 16px;
+	line-height: 1.7em;
+	letter-spacing: 1px;
+}
+.industry-default .waiting{
+	font-size: 22px;
+	color: #666;
+	line-height: 2em;
+	font-style: italic;
+	text-align: center
+}
+.industry-default p hr{
+	padding:5px 0;
+	margin:0;
+	border: 0;
+}
+.industry-default img{
+	max-width: 100%;
+	display: block;
+	margin: 15px auto 0;
+}

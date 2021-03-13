@@ -1,0 +1,22 @@
+var brands = [
+	{
+		"name": "華文品牌管理有限公司",
+		"logo": "mdecomics.png",
+		"href": "http://www.mdecomics.com/"
+	},
+	{
+		"name": "mattmatt",
+		"logo": "mattmatt.png",
+		"href": "https://www.mattmatt.cn"
+	},
+	{
+		"name": "津萬出版有限公司",
+		"logo": "chunman.png",
+		"href": ""
+	},
+	{
+		"name": "卓高資產管理（亞洲）有限公司",
+		"logo": "eminence.png",
+		"href": ""
+	}
+]

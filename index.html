@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>卓高資產管理(亞洲)有限公司</title>
+	<script src="public/vue.js"></script>
+    <meta name="viewport" content="width=1200">
+	<link rel="stylesheet" type="text/css" href="public/style/base.css">
+	<link rel="stylesheet" type="text/css" href="public/style/index.css">
+</head>
+<body>
+	<div id="app">
+		<template v-if="isPhone">
+			<header class="phone-header">
+				<span class="phone-header__show" @click="showPhoneMenu = true"><i class="phone-header__show-icon"></i></span>
+			</header>
+			<div class="phone-header__stand"></div>
+			<div v-if="showPhoneMenu" class="phone-menu__bg" @click="showPhoneMenu = false"></div>
+			<dl class="phone-menu" :class="{'Show': showPhoneMenu}">
+				<dt>
+					<span class="phone-header__close" @click="showPhoneMenu = false">
+						<i class="phone-header__close-icon"></i>
+					</span>
+				</dt>
+				<dd v-for="(m, i) in menu[current]" v-html="m" @click="selectedMenu(m, i); showPhoneMenu = false;"></dd>
+			</dl>
+		</template>
+		<header class="pc-header" v-else>
+			<div :class="{'isPhone': isPhone}">
+				<ul class="menu">
+				<li
+					v-for="(item, index) in menu[current]"
+					:key="index"
+					:class="{'stand': index !== 0 && menuIdnex === index}"
+					@click="selectedMenu(item, index)"
+					v-html="item">
+				</li>
+				</ul>
+			</div>
+		</header>
+		<div class="main" :style="isPhone? 'padding-top:0;' : ''">
+			<section v-for="(item, index) in banners" :style="`background-image: url(./public/images/${item})`" :key="index">
+			<div>
+				<h2 v-html="language[current][index].title"></h2>
+				<p v-html="language[current][index].des"></p>
+			</div>
+			</section>
+		</div>
+		<footer v-html="copeRight[current]"></footer>
+	</div>
+	<!-- <script type="text/javascript" src="public/js/base.js"></script> -->
+	<script type="text/javascript">
+		function getFullYear() {
+		  let startYear = 2021
+		  let nowYear = (new Date).getFullYear()
+		  return startYear === nowYear
+			? nowYear
+			: (startYear + ' - ' + nowYear)
+		}
+		var app = new Vue({
+			el: '#app',
+			data() {
+				return {
+					current: 'SimplifiedChinese',
+					banners: ['bg1.png', 'bg2.png', 'bg3.png', 'bg4.png', 'bg5.png'],
+					menuIdnex: 0,
+					menu: {
+						SimplifiedChinese: ['首页', '关于我们', '我们的方案', '我们的团队', '联络我们', 'English'],
+						TraditionalChinese: ['首頁', '關於我們', '我們的方案', '我們的團隊', '聯絡我們', 'English'],
+						English: ['Home', 'About Us', 'Our Approach', 'Our Team', 'Contact us', '繁', '简']
+					},
+					language: {
+						SimplifiedChinese: [
+						{
+							title: '核心价值',
+							des: '“核心价值乃透过在环球不同的投资策略及产业为投资者提供超卓的回报”'
+						},
+						{
+							title: '关于我们',
+							des: '卓高资产管理(亚洲)有限公司是一家投资顾问，其核心价值乃在环球透过不同的投资策略及产业为投资者提供超卓的回报。这是通过我们独家及创新的研究分析，以选择最适合的投资组合及管理专员来实现的。我们拥有超卓的团队，由经验丰富的基金经理、分析师及行业専家组成。以香港作为基地，卓高期望为全球的专业投资者管理资产，包括家族基金、金融机构、慈善基金、基金会、养老基金及专业的个人投资者。我们获得香港证券及期货事务监察委员会发出的第9类(资产管理)牌照(证监会中央编号: BOP785)以进行《证券及期货条例》所界定的受规管活动。'
+						},
+						{
+							title: '我们的方案',
+							des: `为了完成给投资者提供超卓回报的使命，我们的投资高度灵活，<br />
+							并会分散于不同回报与风险策略，跨地域及产业以帮助投资者把握市场机遇。<br /><br />
+							我们的平台使投资者能够连接庞大的投资专业人员网络。基于每组投资队伍在不同领域的专业性，<br />
+							我们有专注的团队以研究及执行单一的投资策略。这些专注的投资团队由经验丰富的基金经理和行业专家带领制定投资组合。每个投资决定均会通过整合当地市场的专业知识及深入研究分析作支持。另外，我们的战略合作伙伴也为我们在寻找，研究及执行每项投资发辉独立的专业能力以助我们更有把握提升投资的胜算及回报。`
+						},
+						{
+							title: '我们的团队',
+							des: '我们的专业管理团队拥有丰富经验，来自多个行业及领域，多元化的文化，教育背景和专业知识。团队之前在国际顶级投资银行和资产管理公司均拥有过成功的事业生涯。'
+						},
+						{
+							title: '联络我们',
+							des: `卓高资产管理(亚洲)有限公司<br />
+							香港观塘创业街15号<br />
+							万泰利广场33楼C室<br /><br />
+							电话: +852 27788789<br />
+							电邮: info@eminenceam.com`
+						}
+						],
+						TraditionalChinese: [
+						{
+							title: '核心價值',
+							des: '“核心價值乃透過在環球不同的投資策略及產業為投資者提供超卓的回報”'
+						},
+						{
+							title: '關於我們',
+							des: '卓高資產管理(亞洲)有限公司是一家投資顧問，其核心價值乃在環球透過不同的投資策略及產業為投資者提供超卓的回報。這是通過我們獨家及創新的研究分析，以選擇最適合的投資組合及管理專員來實現的。我們擁有超卓的團隊，由經驗豐富的基金經理、分析師及行業専家組成。以香港作為基地，卓高期望為全球的專業投資者管理資產，包括家族基金、金融機構、慈善基金、基金會、養老基金及專業的個人投資者。我們獲得香港證券及期貨事務監察委員會發出的第9類(資產管理)牌照(證監會中央編號: BOP785)以進行《證券及期貨條例》所界定的受規管活動。'
+						},
+						{
+							title: '我們的方案',
+							des: `為了完成給投資者提供超卓回報的使命，我們的投資高度靈活，<br />
+							並會分散於不同回報與風險策略，跨地域及產業以幫助投資者把握市場機遇。<br /><br />
+							我們的平台使投資者能夠連接龐大的投資專業人員網絡。基於每組投資隊伍在不同領域的專業性，<br />
+							我們有專注的團隊以研究及執行單一的投資策略。這些專注的投資團隊由經驗豐富的基金經理和行業專家帶領制定投資組合。每個投資決定均會通過整合當地市場的專業知識及深入研究分析作支持。另外，我們的戰略合作夥伴也為我們在尋找，研究及執行每項投資發輝獨立的專業能力以助我們更有把握提升投資的勝算及回報。`
+						},
+						{
+							title: '我們的團隊',
+							des: '我們的專業管理團隊擁有豐富經驗，來自多個行業及領域，多元化的文化，教育背景和專業知識。團隊之前在國際頂級投資銀行和資產管理公司均擁有過成功的事業生涯。'
+						},
+						{
+							title: '聯絡我們',
+							des: `卓高資產管理(亞洲)有限公司<br />
+							香港觀塘創業街15號<br />
+							萬泰利廣場33樓C室<br /><br />
+							電話: +852 27788789<br />
+							電郵: info@eminenceam.com`
+						}
+						],
+						English: [
+						{
+							title: 'Core Values',
+							des: '“Founded on core values of providing investors with attractive returns through investing in a variety of strategies and products globally”'
+						},
+						{
+							title: 'About Us',
+							des: 'Eminence Asset Management (Asia) Limited is an investment advisor founded on core values of providing investors with attractive returns through investing in a variety of strategies and products globally. This is achieved through innovative and proprietary analysis, superior manager selection and portfolio management. Our services are carried out by dedicated professionals and supported by a team of analysts and specialists. Incorporated in Hong Kong, Eminence aims to manage capital for sophisticated investors globally, including family offices, financial institutions, endowments, foundations, pension funds and professional individual investors. We are licensed by the Hong Kong Securities and Futures Commission to conduct Type 9 regulated activity (Asset Management) with SFC CE number: BOP785.'
+						},
+						{
+							title: 'Our Approach',
+							des: `To accomplish our mission to provide investors with attractive returns, our investment mandate is highly flexible and diversified across risk/return strategies, geography and asset classes as to help investors seize market opportunities.<br /><br />
+							Our platform gives investors access to an extensive network of investment professionals, where dedicated investment teams are responsible for actively managing a single strategy. The investment teams are supported by experienced asset managers and specialists to assist development of portfolio strategy. Each investment decisions are to be supported by in-depth research that integrates local market expertise. In addition, our strategic partners also provide us with the expertise in finding and executing investment decisions to enable us more confidently enhance the investment odds and returns.`
+						},
+						{
+							title: 'Our Team',
+							des: 'Our management team comprises professionals with extensive experience, multiple disciplinary knowledge, diverse cultural, educational backgrounds and expertise. The team has long successful careers previously with leading top-tier investment banks and asset management companies.'
+						},
+						{
+							title: 'Contact us',
+							des: `Eminence Asset Management (Asia) Limited<br />
+							Suite C, 33/F Montery Plaza,<br />
+							15 Chong Yip Street, Kwun Tong, <br />
+							Kowloon, Hong Kong<br /><br />
+							Tel: +852 27788789<br />
+							Email: info@eminenceam.com`
+						}
+						]
+					},
+					copeRight: {
+						SimplifiedChinese: '版权所有 © ' + getFullYear() + ' 卓高资产管理(亚洲)有限公司。保留所有权利',
+						TraditionalChinese: '版權所有 © ' + getFullYear() + ' 卓高資產管理(亞洲)有限公司。保留所有權利',
+						English: 'Copyright © ' + getFullYear() + ' Eminence Asset Management (Asia) Limited. All Rights Reserved.'
+					},
+					menuDic: {
+						'English': 'English',
+						'简': 'SimplifiedChinese',
+						'繁': 'TraditionalChinese'
+					},
+					isPhone: false,
+					showPhoneMenu: false,
+					timer: null
+				}
+			},
+			mounted() {
+				if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+					this.isPhone = true
+				}
+				window.addEventListener('scroll', () => {
+					let scrollTop = document.documentElement.scrollTop ||
+									document.body.scrollTop ||
+									document.querySelector('body').scrollTop
+					let sTop = scrollTop
+					// console.log(sTop, sTop > 0 ? parseInt(sTop / 717) : 0)
+					this.menuIdnex = sTop > 0 ? parseInt(sTop / 717) : 0
+				}, true)
+			},
+			methods: {
+				selectedMenu (item, index) {
+					if (index > 4 && this.menuDic[item]) {
+						this.current = this.menuDic[item]
+					} else if(index < 5) {
+						document.documentElement.scrollTop = index * 717
+						// this.scrollAnimate(index * 717)
+					}
+				},
+				scrollAnimate (tragetScrollTop) {
+					let nowScrollTop = document.documentElement.scrollTop
+					// console.log('nowScrollTop', nowScrollTop)
+					// console.log('tragetScrollTop', tragetScrollTop)
+					if (nowScrollTop === tragetScrollTop) return
+					this.timer = setInterval(() => {
+						if (document.documentElement.scrollTop >= tragetScrollTop) {
+							clearInterval(this.timer)
+						}
+						if (tragetScrollTop < nowScrollTop) {
+							document.documentElement.scrollTop -= 10
+						} else {
+							document.documentElement.scrollTop += 10
+						}
+					}, 1)
+				}
+			}
+		})
+	</script>
+</body>
+</html>

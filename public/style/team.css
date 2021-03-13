@@ -1,0 +1,126 @@
+
+.team-list{
+	position: relative;
+	min-height: 600px;
+}
+.team-list img{
+	display: inline-block;
+	width: 220px;
+	height: 255px;
+	cursor: pointer;
+}
+.team-list .team{
+	width: 33.33%;
+	height: 350px;
+	padding-top: 40px;
+	text-align: center;
+	float: left;
+}
+.team-list .team h2{
+	height: 50px;
+	line-height: 50px;
+	margin: 0 70px;
+}
+.team-list .team h2 .name{
+	font-size: 17px;
+	font-weight: bold;
+	position: relative;
+	/* display: inline-block; */
+	z-index: 1;
+	background-color: white;
+	padding: 0 15px;
+}
+.team-list .team h2 .line{
+	height: 1px;
+	overflow: hidden;
+	background-color: #ffefbe;
+	border-top: 1px solid #ffd042;
+	display: block;
+	margin-top: -27px;
+}
+.team-list .team p{
+	font-size: 13px;
+	color: #777;
+}
+
+
+.team-list .default{
+	height: 600px;
+	width: 100%;
+	background-color: rgba(255,255,255,.5);
+	position: absolute;
+	z-index: 1;
+	top: 0;left: 0;
+}
+.team-list .default .left,
+.team-list .default .right{
+	height: 100%;
+	position: absolute;
+	top: 0;
+	background-image: url('../images/bg.png');
+	background-position-y: -80px;
+	background-size: 750px 750px;
+}
+.team-list .default .left{
+	width: 30%;
+	left: 0;
+	background-color: gray;
+	background-position-x: right;
+}
+.team-list .default .left img{
+	width: 376px;
+	height: 436px;
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	right: -115px;
+	margin-top: -218px;
+}
+.team-list .default .right{
+	width: 70%;
+	right: 0;
+	padding-top: 60px;
+	padding-left: 160px;
+	padding-right: 10%;
+	background-color: #333;
+	box-sizing: border-box;
+}
+.team-list .default .right .content{
+	font-size: 14px;
+	color: #dadada;
+	line-height: 1.7em;
+	letter-spacing: 0.8px;
+}
+
+.team-list .default .right .content .close{
+	width: 62px;
+	height: 62px;
+	position: absolute;
+	top: 50px;right: 14%;
+	background: url('../images/team/icon-back.png');
+	cursor: pointer;
+}
+.team-list .default .right .content hr{
+	padding: 5px 0;
+	margin: 0;
+	border: 0 none;
+}
+.team-list .default .right .content h3,
+.team-list .default .right .content h5{
+	color: white;
+	font-weight: bold;
+}
+.team-list .default .right .content h4,
+.team-list .default .right .content h6{
+	font-size: 1.2em;
+	margin-bottom: 20px;
+}
+.team-list .default .right .content h3{
+	font-size: 1.7em;
+}
+.team-list .default .right .content h5{
+	font-size: 1.4em;
+}
+.team-list .default .right .content p{
+	font-size: 1em;
+}

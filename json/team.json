@@ -1,0 +1,43 @@
+
+var team = [
+	{
+		"name": "馮文謙",
+		"enname": "Matthew Fong",
+		"work": "創始人兼董事局主席及董事總經理",
+		"enwork": "Founder & Chairman of the Board of Directors and Managing Director",
+		"avatar": "Matthew.png",
+		"description": "馮文謙先生2009年于美國加州大學畢業主修會計和經濟學，畢業後回澳門工作於國際著名會計師事務所——安永會計師事務所擔任稅務師。<hr/>因堅信國內文化產業市場的無限前景，2010年毅然放棄工作，投身動漫行業。為熟悉國內法律以及更好地開展國內業務，2011年開始進修法律並於2013年獲中國政法大學第二學士法學位。<hr/>數年艱苦的摸索逐漸確定了適合國內發展的商業模式。兩年的高速發展從零開始完成了橫跨香港、澳門、內地的誇區域營運公司，進一步實現泛亞洲戰略目部署。"
+	},
+	{
+		"name": "馮文敬",
+		"enname": "Kingsley",
+		"work": "执行董事及副總經理",
+		"enwork": "Executive Director & Deputy General Manager",
+		"avatar": "Kingsley.png",
+		"description": "馮文敬先生畢業於美國南加州大學馬歇爾商學院，主修會計及工商管理學。為美國註冊會計師並通過CFA Level Ⅱ考試。曾於美國連鎖寵物醫療機構VCA Inc.任職財務會計及美國會計師事務所Singer Lewak LLP 單人審計職務。<hr/>现於家族製衣企業擔任營運總監。熱衷金融財務及資本操作，憑藉其中外工作經驗及國際化視野，擅長於戰略發展，財務分析及管理。"
+	},
+	{
+		"name": "程爵生",
+		"enname": "Cheng",
+		"work": "執行董事及財務總監",
+		"enwork": "Executive Director & Chief Financial Officer",
+		"avatar": "Cheng.png",
+		"description": "程爵生先生擁有超過18年房地產及金融經驗，任職過多家跨國機構包括世邦魏理仕、仲量聯行、荷蘭國際投資集團，美林證劵 及德意志銀行。<hr/>他曾參與多個在香港及美國主機板上市及融資項目，包括融創中國，恒大地產集團，上海金茂投資，朗廷酒店投資，易居中國，中國房地產資訊 集團，景瑞控股，大連億達，中國物流資產，中國地產集團，廈門明發集團及鑫苑中國。<hr/>程先生在荷蘭國際房地產投資管理(ING Real Estate Investment Management，世界最大的國際房地產投資管理公司之一)任職時，曾參與多個在香港和中國以不同投資策略(低風險、增值、進取) 的項目。<hr/>此外，程先生在世邦魏理仕與仲量聯行任職時累積了豐富的房 地產諮詢 經驗，曾出任埃克森美孚及新加坡政府投資公司之顧問。<hr/>程先生獲得由紐西蘭奧克蘭大學頒發的財務系學士及產業測量系學士。<hr/>他擁有美國特許金融分析師(CFA)及美國特許金融風險管理師 (FRM)專業資格，香港財經分析師學會(HKSFA)及紐西蘭房地產協會(REINZ)之會員。"
+	},
+	{
+		"name": "張東耀",
+		"enname": "Sam",
+		"work": "執行董事及美術設計總監",
+		"enwork": "Executive Director & Art Design Director",
+		"avatar": "Sam.png",
+		"description": "張東耀先生，畢業於澳門理工學院，主修視覺藝術及綜合設計專業，參與策劃創立澳門首本綜合漫畫雜誌《InWatch》及《ShowTime》等多本文創及娛樂雜誌，作為第一位加入集團的核心人物，現為集團合伙人兼執行董事及美術設計總監，一直堅守集團使命及價值觀帶領集團不段擴充及壯大。"
+	},
+	{
+		"name": "李志鴻",
+		"enname": "Ashley Lee",
+		"work": "執行董事及運營總監",
+		"enwork": "Executive Director & Director of operations",
+		"avatar": "Ashley.png",
+		"description": "李志鴻先生，畢業于廣州南洋理工學院，主修服裝設計、服裝工程學,從事服裝設計行業 6年，精通服裝行業。於2015年加入津萬，現擔任集團運營總監及集團旗下珠海雅華品牌管理有限公司及中山漫道服裝設計有限公司董事總經理一職，作為集團核心人物帶領公司高速發展。"
+	}
+]

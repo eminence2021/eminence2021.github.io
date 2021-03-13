@@ -1,0 +1,73 @@
+var industry = [
+	{
+		"project": "零售",
+		"en": "habiliment",
+		// "description": "Casual but Elegant “簡約卻不失優雅”一直是 mattmatt 堅持的設計風格，充分吸納源自于日韓等地的時尚設計風格，並巧妙地將這些風格進行融合，根據每季設計主題，配合現代個人特點要求，給予各種形象需求。在不同搭配的形式下，滿足到各種不同場合的穿著需求，打造獨具品位的服飾文化。",
+		"description": "由2015年最初以「Casual but Elegant 簡約卻不失優雅」的時尚潮流理念為主的電子商務網站。<hr />" 
+		+ "進一步升級至「Things’re Good Here 這裡都是最好的」的全品類電商品牌。mattmatt.cn一直堅持給客戶最好、最實惠、最時尚及最健康的商品。務求建立自身的品牌價值，時刻滿足客戶需求，把mattmatt.cn打造成中國的國際零售品牌。"
+		+ "<img src='../public/images/industry/habiliment.png' />",
+		"banner": ["habiliment.png"]
+	},
+	{
+		"project": "文化",
+		"en": "comics",
+		"description": "我們是一家主力以 互聯網＋漫畫 為主體來進行一系列商品衍生的泛娛樂公司。<hr/>"
+		+ "成立主於2013年，主力以“漫道”品牌作為核心發展的動漫生態娛樂公司。漫道以“讓漫畫融入生活”為核心理念，致力打造一個可持績發展及高増長的動漫創作生態系統，以人才培育及版權衍生為核心，作為行業的引擎帶動全產業鏈高速發展。"
+		+ "<div style='background-color: #f2f2f2; margin-top:25px;'><img src='../public/images/industry/comsics.jpg' /></div>"
+		+ "<h2 style='margin: 30px 0 20px;font-weight:bold;font-size:1.2em;'>文創服務</h2>"
+		+ "津津食品（簡稱津津）以原創動漫形象結合健康零食及飲料為核心品類發展的食品公司，目標在中國構建行業最大的健康快消品銷售網絡。為客戶帶來最美味，最健康的零食及飲料，打造”津津食品，津津有味”的新生代健康零食品牌。"
+		+ "<img style='margin-top:25px;' src='../public/images/industry/orange.png' />",
+		"banner": "comsics.jpg"
+	},
+	{
+		"project": "製造",
+		"en": "culture",
+		// "description": "本地原創童裝服裝品牌MAD.Q，屬津萬文創商業集團下業務之一。<hr/>MAD.Q薈聚壹眾新晉設計師，以「童趣」為品牌核心理念，制作適合0-15歲的兒童時裝。<hr/>目前是以集研發、生產、銷售於壹體，專營MAD.Q系列的現代化服飾品牌。",
+		"description": '<h2 style="font-weight:bold;padding:10px 0 15px;">製 造 —— 印刷及包裝</h2>'
+			+ '集團旗下印刷公司位於中山市，為追求品質、精益求精，公司嚴格執行ISO9001品質管制體系，讓企業在生產、環境保護、健康安全、資訊等各方面均符合標準。公司專業於彩色印刷、彩盒畫冊印刷、商品目錄印刷、宣傳畫冊印刷、宣傳單張印刷、手挽袋印刷、彩盒畫冊印刷、書畫冊印刷、檯曆掛曆印刷、產品包裝印刷和各類書刊雜誌印刷等紙類印刷。'
+			+ '<img src="../public/images/industry/manufacture-3.png" />'
+			+ '<h2 style="font-weight:bold;padding:20px 0 15px;">製 造 —— 時裝設計及生產</h2>'
+			+ '中國優秀獨立設計師人信賴的合作夥伴, 一直為中國優秀獨立設計師提供最貼心的服務幫助他們在世界各地時裝show展示鋒芒。'
+			+ '<img style="padding-bottom:55px;" src="../public/images/industry/manufacture-2.png" />',
+		"banner": ["manufacture.jpg"]
+	},
+	{
+		"project": "金融業務",
+		"en": "other",
+		"description": '為配合澳門特區政府發展特色金融產業,有利於更好地參與國家整體發展,推動澳門經濟適度多元。 津萬文創商業集團於2018年底聯手香港卓高資產管理(亞洲)有限公司及華林証劵(香港)有限公司在澳門投資10億港圓正式籌備開展金融業務,目前項目正積極順利進行中。'
+			+ '<img style="padding:15px 0 55px;" src="../public/images/industry/financial-1.png" />',
+		"banner": ["financial.jpg"]
+	}
+]
+// var industry = [
+// 	{
+// 		"project": "動漫產業",
+// 		"en": "comics",
+// 		"description": "我們是一家主力以互聯網＋漫畫為主體來進行一系列商品衍生的泛娛樂公司，目標是成為中國首家動漫生態娛樂公司的亞洲動漫品牌。<hr/>成立主於2013年，主力以“漫道” 品牌作為核心發展的動漫生態娛樂公司。<hr/>漫道以＂讓漫畫融入生活＂為核心理念，致力打造一個可持續發展及高增長的動漫創作生態系統，以人才培育及版權衍生為核心，作為行業的引擎帶動全產業鏈高速發展。<hr/>漫道以互聯網＋漫畫（版權ＩＰ）為核心的商業模式來進行一系列商品衍生的娛樂公司。我們分別在澳門，中山，汕頭設有分公司及辦事處。並預計在往後三年內繼續擴充至台灣，日本，馬來西亞，泰國及印尼來實現我們泛亞洲的戰略部署。力爭成為中國最有影響力的亞洲動漫品牌。",
+// 		"banner": "comsics.jpg"
+// 	},
+// 	{
+// 		"project": "潮流服裝",
+// 		"en": "habiliment",
+// 		"description": "Casual but Elegant “簡約卻不失優雅”一直是 mattmatt 堅持的設計風格，充分吸納源自于日韓等地的時尚設計風格，並巧妙地將這些風格進行融合，根據每季設計主題，配合現代個人特點要求，給予各種形象需求。在不同搭配的形式下，滿足到各種不同場合的穿著需求，打造獨具品位的服飾文化。",
+// 		"banner": "habiliment.jpg"
+// 	},
+// 	{
+// 		"project": "網絡科技",
+// 		"en": "network",
+// 		"description": "",
+// 		"banner": "waiting.jpg"
+// 	},
+// 	{
+// 		"project": "金融",
+// 		"en": "financial",
+// 		"description": "",
+// 		"banner": "waiting.jpg"
+// 	},
+// 	{
+// 		"project": "跨境貿易",
+// 		"en": "trading",
+// 		"description": "",
+// 		"banner": "waiting.jpg"
+// 	}
+// ]
